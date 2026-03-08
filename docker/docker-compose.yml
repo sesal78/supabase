@@ -80,6 +80,7 @@ services:
     depends_on:
       analytics:
         condition: service_healthy
+    dns_search: ""
     environment:
       KONG_DATABASE: "off"
       KONG_DECLARATIVE_CONFIG: /home/kong/kong.yml
